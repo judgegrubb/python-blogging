@@ -1,0 +1,5 @@
+venv
+*.pyc
+staticfiles
+testDB.db
+db.sqlite3
