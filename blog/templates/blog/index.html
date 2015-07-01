@@ -1,3 +1,9 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
 {% if latest_post_list %}
 	<ul>
 		{% for post in latest_post_list %}
@@ -7,3 +13,5 @@
 {% else %}
 	<p>There are no posts on this blog yet.</p>
 {% endif %}
+
+{% endblock %}
