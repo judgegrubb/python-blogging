@@ -19,3 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+admin.site.site_title = 'Blog Admin Interface'
+admin.site.site_header = 'Blog Administration'
