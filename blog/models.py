@@ -9,3 +9,6 @@ class Post(models.Model):
 	post_text = models.CharField(max_length=5000)
 	post_title = models.CharField(max_length=200, default="")
 	published = models.BooleanField(default=False)
+
+	def __str__(self):
+		return self.post_title
