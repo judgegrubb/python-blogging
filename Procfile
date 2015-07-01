@@ -1,1 +1,1 @@
-web: gunicorn runnincomputes.wsgi --log-file -
+web: gunicorn pythonblogging.wsgi --log-file -
