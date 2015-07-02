@@ -11,4 +11,5 @@
 	- luckily bootstrap's navbar has some of that already built in
 	- however everything else is crap on phones
 		- need to try on tablets
-	- including the background
+	- including the backgroundj
+- Design new favicon?

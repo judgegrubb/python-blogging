@@ -16,6 +16,7 @@
 	<!-- Personal Stylesheet -->
 	{% load staticfiles %}
 
+	<link rel="icon" href="{% static 'blog/images/favicon.ico' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -26,7 +27,7 @@
 	<![endif]-->
 </head>
 <body>
-
+	<!-- background image -->
 	<img src="{% static 'blog/images/forest.jpg' %}" class="background" alt="ERROR" />
 
 	<header>
@@ -68,10 +69,7 @@
 			<p>Domain purchased through <a href="http://www.hover.com/">Hover</a></p>
 			<p>Background courtesy of <a href="https://unsplash.com">Unsplash</a></p>
 		</footer>
-	</div>
-
-	<!-- backgorund image placed towards the end of the file in order to help page load faster -->
-	
+	</div>	
 
 
 	<!-- javascript stuff placed towards end of file so page loads faster -->
