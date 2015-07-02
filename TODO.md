@@ -7,3 +7,8 @@
 - change background?
 - figure out where names should really go on posts
 	- if they should go anywhere at all
+- Format blog's CSS to make it mobile friendly
+	- luckily bootstrap's navbar has some of that already built in
+	- however everything else is crap on phones
+		- need to try on tablets
+	- including the background
