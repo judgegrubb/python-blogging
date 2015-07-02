@@ -6,3 +6,76 @@ content {
 	padding: 40px 15px;
 	text-align: center;
 }
+
+.main {
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.title {
+	font-size: large;
+	background-color: #f8f8f8;
+	padding: 5px 20px 5px 20px;
+	margin: 20px 0 20px 0;
+	-moz-box-shadow: 0 0 20px black;
+	-webkit-box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px black;
+}
+
+.title a {
+	color: gray;
+}
+
+.title a:visited {
+	color: gray;
+}
+
+article {
+	border-color: black;
+	background-color: #f8f8f8;
+	padding: 50px;
+	-moz-box-shadow: 0 0 20px black;
+	-webkit-box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px black;
+	width: 100%;
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+footer {
+	background-color: #f8f8f8;
+	font-size: large;
+	padding: 5px 20px 5px 20px;
+	margin: 20px 0 20px 0;
+	-moz-box-shadow: 0 0 20px black;
+	-webkit-box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px black;
+	color: black;
+	text-align: center;
+	clear: both;
+}
+
+img.background {
+	/* set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* set up proportionate scaling */
+	padding: 0;
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	img.background {
+		left: 50%;
+		margin-left: -512px; /* 50% */
+	}
+}
