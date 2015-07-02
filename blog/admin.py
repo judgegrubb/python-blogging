@@ -7,7 +7,7 @@ class PostModelForm( forms.ModelForm ):
     post_text = forms.CharField( widget=forms.Textarea )
     class Meta:
         model = Post
-        fields = ['post_title', 'author', 'pub_date', 'post_text', 'published']
+        fields = ['post_title', 'author', 'pub_date', 'post_text', 'edit_type', 'published']
 
 # Register your models here.
 class PostAdmin(admin.ModelAdmin):
