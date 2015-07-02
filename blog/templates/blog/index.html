@@ -14,8 +14,10 @@
 		</div>
 
 		<article>
-			{{ post.post_text }}
-			<hr>
+			<section>
+				{{ post.post_text }}
+			</section>
+			<hr />
 			<sub>{{ post.pub_date }} | {{ post.author }}</sub>
 		</article>
 	{% endfor %}
