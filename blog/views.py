@@ -6,6 +6,8 @@ from .models import Post
 # Create your views here.
 def index(request):
 	latest_post_list = Post.objects.filter(published=True).order_by('-pub_date')
+
+	# If you want to display more than 5 posts per page simply change this number
 	paginator = Paginator(latest_post_list, 5)
 
 	page = request.GET.get('page')
