@@ -13,3 +13,4 @@
 		- need to try on tablets
 	- including the backgroundj
 - Design new favicon?
+- The background is probably TOO high definition. Find way to speed it up or offer different sizes for different devices?
