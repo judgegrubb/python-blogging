@@ -44,6 +44,10 @@ article {
 	text-align: left;
 }
 
+article sub {
+	font-size: xx-small;
+}
+
 footer {
 	background-color: #f8f8f8;
 	font-size: large;
