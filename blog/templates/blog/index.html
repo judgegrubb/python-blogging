@@ -15,7 +15,11 @@
 
 		<article>
 			<section>
-				{{ post.post_text }}
+				{% ifequal post.edit_type 'H' %}
+					{{ post.post_text|safe }}
+				{% else %}
+					{{ post.post_text }}
+				{% endifequal %}
 			</section>
 			<hr />
 			<sub>{{ post.pub_date }} | {{ post.author }}</sub>
