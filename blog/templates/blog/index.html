@@ -1,16 +1,28 @@
 {% extends "blog/base.html" %}
 
-{% block title %}Index{% endblock %}
+{% block title %}blog{% endblock %}
+
+{% block homelink %}#{% endblock %}
+{% block homelinktwo %}#{% endblock %}
 
 {% block content %}
 
 {% if posts %}
-	<ul>
-		{% for post in posts %}
-			<li><a href="{% url 'blog:detail' post.id %}">{{ post.post_title }}</a></li>
-		{% endfor %}
-	</ul>
+	{% for post in posts %}
+		<div class="title">
+			<h1><a href="{% url 'blog:detail' post.id %}">{{ post.post_title }}</a></h1>
+		</div>
 
+		<article>
+			{{ post.post_text }}
+		</article>
+	{% endfor %}
+{% else %}
+	<div class="title"><h1>There are no posts on this blog yet.</h1></div>
+{% endif %}
+{% endblock %}
+
+{% block footer %}
 	<div class="pagination">
 		<span class="step-links">
 			{% if posts.has_previous %}
@@ -26,10 +38,4 @@
 			{% endif %}
 		</span>
 	</div>
-{% else %}
-	<p>There are no posts on this blog yet.</p>
-{% endif %}
-
-
-
 {% endblock %}

@@ -8,7 +8,7 @@
 	<meta name="description" content="Elijah Grubb's blog on his development experiences">
 	<meta name="author" content="Elijah Grubb, judgegrubb">
 
-	<title>{% block title %}{% endblock %} | blog.grubbit.net</title>
+	<title>{% block title %}{% endblock %} | grubbit.net</title>
 	
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
@@ -27,8 +27,10 @@
 </head>
 <body>
 
+	<img src="{% static 'blog/images/forest.jpg' %}" class="background" alt="ERROR" />
+
 	<header>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -37,11 +39,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Elijah Grubb</a>
+					<a class="navbar-brand" href="{% block homelink %}#{% endblock %}">Elijah Grubb's Blog</a>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Blog</a></li>
+						<li class="{% block blogactive %}active{% endblock %}"><a href="{% block homelinktwo %}#{% endblock %}">Blog</a></li>
 						<li><a href="http://www.github.com/judgegrubb">My GitHub</a></li>
 						<li><a href="http://www.linkedin.com/in/elijahgrubb">My LinkedIn</a></li>
 						<li><a href="http://www.twitter.com/judgegrubb">My Twitter</a></li>
@@ -51,19 +53,27 @@
 		</nav>
 	</header>
 
-	<content>
-		{% block content %}
-		{% endblock %}
-	</content>
+	<div class="main">
+		<content>
+			{% block content %}
+			{% endblock %}
+		</content>
 
-	<footer>
-		<p>Brought to you by Elijah Grubb</p>
-		<p>Code hosted on <a href="http://www.github.com/judgegrubb/python-blogging/">GitHub</a></p>
-		<p>Website hosted on <a href="http://www.heroku.com/">Heroku</a></p>
-		<p>Domain purchased through <a href="http://www.hover.com/">Hover</a></p>
-	</footer>
+		<footer>
+			{% block footer %}
+			{% endblock %}
+			<p>Brought to you by Elijah Grubb</p>
+			<p>Code hosted on <a href="http://www.github.com/judgegrubb/python-blogging/">GitHub</a></p>
+			<p>Website hosted on <a href="http://www.heroku.com/">Heroku</a></p>
+			<p>Domain purchased through <a href="http://www.hover.com/">Hover</a></p>
+		</footer>
+	</div>
+
+	<!-- backgorund image placed towards the end of the file in order to help page load faster -->
+	
 
 
+	<!-- javascript stuff placed towards end of file so page loads faster -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
