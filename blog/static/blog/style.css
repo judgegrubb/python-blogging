@@ -44,6 +44,10 @@ article {
 	text-align: left;
 }
 
+article section {
+	padding-bottom: 30px;
+}
+
 article sub {
 	font-size: xx-small;
 }
