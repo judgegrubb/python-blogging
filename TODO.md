@@ -11,4 +11,6 @@
 		- need to try on tablets
 	- including the backgroundj
 - Design new favicon?
-- The background is probably TOO high definition. Find way to speed it up or offer different sizes for different devices?
+- Update design away from slow loading images
+	- when you look at sites like marco.org or other popular dev blogs they are white/grey backgrounds with simple funishings. Need to make mine more like that.
+- Update color scheme to match my landing page?

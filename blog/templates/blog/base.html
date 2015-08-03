@@ -44,10 +44,12 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="{% block blogactive %}active{% endblock %}"><a href="{% block homelinktwo %}#{% endblock %}">Blog</a></li>
-						<li><a href="http://www.github.com/judgegrubb">My GitHub</a></li>
-						<li><a href="http://www.linkedin.com/in/elijahgrubb">My LinkedIn</a></li>
-						<li><a href="http://www.twitter.com/judgegrubb">My Twitter</a></li>
+						<li><a href="http://www.grubbit.net">My Homepage</a></li>
+						<li><a href="https://www.github.com/judgegrubb">My GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/elijahgrubb">My LinkedIn</a></li>
+						<li><a href="https://www.twitter.com/judgegrubb">My Twitter</a></li>
+						<li><a href="https://www.facebook.com/ElijahLloydGrubb">My Facebook</a></li>
+						<li class="{% block blogactive %}active{% endblock %}"><a href="{% block homelinktwo %}#{% endblock %}">My Blog</a></li>
 					</ul>
 				</div>
 			</div>
@@ -55,7 +57,7 @@
 	</header>
 
 	<div class="main">
-		<content>
+		<div class="content">
 			{% block content %}
 			{% endblock %}
 		</content>
